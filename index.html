@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="app-details">
+        <img
+          src="imgs/currency-icon3.png"
+          alt="currency exchange icon"
+          class="app-icon"
+        />
+        <h1 class="app-tittle">Currency Converter</h1>
+      </div>
+      <label for="amount" class="amount">Amount</label>
+      <input type="number" id="amount" value="100" class="amount-input" />
+      <div class="coverter">
+        <div class="dropdown">
+          <select id="from-currency-select" class="drop"></select>
+          <select id="to-currency-select" class="drop"></select>
+        </div>
+        <button id="convert-button" class="convert-button">Convert</button>
+        <p id="result"></p>
+      </div>
+    </div>
+    <small> <p class="hi-text">HI</p></small>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="currency-codes.js"></script>
+    <script src="api-key.js"></script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+:root {
+  --main-branding-color: #0e1722;
+  --main-branding-color-one: #112742;
+  --main-branding-color-two: #84b8f8;
+  --main-branding-color-three: #044c84;
+  --main-branding-color-four: #167cf8;
+  --firstfont: "Playfair Display", serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+body {
+  background-color: var(--main-branding-color-three);
+}
+h1,
+h2 {
+  font-family: var(--firstfont);
+  color: var(--main-branding-color);
+}
+.wrapper {
+  width: 90%;
+  max-width: 25em;
+  background-color: var(--main-branding-color-two);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 2em;
+  border-radius: 0.8em;
+}
+.app-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.app-icon {
+  width: 190px;
+}
+.app-tittle {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.amount-input {
+  background-color: var(--main-branding-color-two);
+  border-bottom: 3px solid var(--main-branding-color-one);
+  border-radius: 0.2em;
+  color: var(--main-branding-color);
+  margin-bottom: 2em;
+  padding: 0.4em;
+  width: 100%;
+}
+.amount-input:focus {
+  color: var(--main-branding-color);
+  border-color: var(--main-branding-color-four);
+}
+.drop {
+  background-color: var(--main-branding-color-three);
+  border: none;
+  border-radius: 0.2em;
+  color: #ffff;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4em;
+}
+button {
+  font-size: 1em;
+  width: 100%;
+  background-color: var(--main-branding-color-three);
+  padding: 1em 0;
+  margin-top: 2em;
+  border-radius: 0.3em;
+  color: #ffff;
+  font-weight: 550;
+}
+button:hover {
+  background-color: #2671cc;
+  color: var(--main-branding-color-one);
+}
+.hi-text {
+  position: fixed; /* or absolute */
+  bottom: 0;
+  left: 0;
+  margin: 1em; /* Adjust margin as needed */
+  color: white; /* Ensure visibility */
+}
+label {
+  display: block;
+  font-weight: 5em;
+  width: 100%;
+  margin-right: 0.2em;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+#amount {
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 0.6em;
+  font-size: 0.7em;
+  appearance: none;
+  -webkit-appearance: none; /* For WebKit browsers like Safari and older Chrome */
+  -moz-appearance: none; /* For Mozilla browsers like Firefox ....please dont forget these 2 ntokozo*/
+  background-image: url(imgs/dropdown-icon.png);
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%, center;
+  background-size: 20px 20px;
+}
+select option {
+  background-color: var(--main-branding-color);
+}
+#result {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1em;
+  color: var(--main-branding-color-one);
+  background-color: #67a6f2;
+  border-radius: 0.13em;
+  padding: 0.6em 0;
+}
