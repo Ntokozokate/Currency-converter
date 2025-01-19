@@ -93,6 +93,7 @@ button:hover {
   left: 0;
   margin: 1em; /* Adjust margin as needed */
   color: white; /* Ensure visibility */
+  font-size: 0.6em;
 }
 label {
   display: block;
